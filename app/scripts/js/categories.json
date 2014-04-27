@@ -1,0 +1,110 @@
+[
+    {
+        "displayName": "Bars",
+        "googleName": [ "bar" ],
+        "selected": false,
+        "position": 2
+    },
+    {
+        "displayName": "Cafés",
+        "googleName": [ "cafe" ],
+        "selected": false,
+        "position": 1
+    },
+    {
+        "displayName": "Restaurants",
+        "googleName": [ "restaurant" ],
+        "selected": false,
+        "position": 4
+    },
+    {
+        "displayName": "General Food",
+        "googleName": [ "food" ],
+        "selected": false,
+        "position": 3
+    },
+    {
+        "displayName": "Shopping",
+        "googleName": [ "store", "shopping_mall" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Supermarkets",
+        "googleName": [ "grocery_or_supermarket" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Amusement Parks",
+        "googleName": [ "amusement_park" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Aquariums",
+        "googleName": [ "aquarium" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Art Gallery",
+        "googleName": [ "art_gallery" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Bowling",
+        "googleName": [ "bowling_alley" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Casino",
+        "googleName": [ "casino" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Cinemas",
+        "googleName": [ "movie_theater" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Stadiums",
+        "googleName": [ "stadium" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Car Wash",
+        "googleName": [ "car_wash" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Night Clubs",
+        "googleName": [ "night_club" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Parks",
+        "googleName": [ "park" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Liquor",
+        "googleName": [ "liquor_store" ],
+        "selected": false,
+        "position": -1
+    },
+    {
+        "displayName": "Library",
+        "googleName": [ "library" ],
+        "selected": false,
+        "position": -1
+    }
+]

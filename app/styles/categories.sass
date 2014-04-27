@@ -1,0 +1,100 @@
+div.fib-step
+	background: white
+	padding-bottom: 40px
+
+	p, span, input, select
+		@extend .padding-10
+		font-size: 1.6em
+
+	li
+		font-size: 1.2em
+
+	input, select
+		width: 80%
+		padding-left: 5px
+		color: $dark-blue
+		height: 30px
+		background: white
+		border: 1px solid $outline-gray
+
+
+div.categoriesListContainer
+	position: fixed
+	top: 80px
+	left: 5%
+	width: 90%
+	height: 80%
+	background: white
+	z-index: 500
+	border-radius: 6px
+	border: 1px solid $outline-gray
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.15)
+	+css-transition(0.4s)
+
+div.categoriesListContainerHidden
+	left: -100%
+	+css-transition(0.4s)
+
+
+div.categoriesListOptions
+	height: 48px
+	padding-left: 10px
+	padding-right: 5px	
+	padding-top: 5px
+	border-bottom: 1px solid $dark-blue
+
+	span
+		@extend .normal
+		font-size: 30px
+		padding-bottom: 5px
+		color: $dark-blue
+
+	button
+		@extend .fib-button 
+		@extend .float-right
+		margin-left: 15px
+		
+div.categoriesList
+	font-size: 3.2em
+	line-height: 2.0em
+	overflow-y: scroll
+	overflow-x: hidden
+	height: 85%
+	text-overflow: ellipsis
+	word-wrap: break-word
+
+	div
+		border-bottom: 1px solid $separator-gray
+		padding-left: 10px
+		padding-right: 10px
+		+user-select(none)
+
+	div.categoriesListItemLast
+		border-bottom: 0
+
+	div.categoriesListItemSelected
+		color: $dark-blue
+		background: $light-blue
+
+
+div.continue 
+	@extend .normal
+	position: fixed
+	width: 100%
+	height: 60px
+	font-size: 3em
+	line-height: 2em
+	bottom: 0
+	text-align: center
+	background-color: $light-blue
+	border-top: 2px solid $dark-blue
+	z-index: 3
+	color: $dark-blue
+	border-top-left-radius: 10px
+	border-top-right-radius: 10px
+	+user-select(none)
+
+div.continue:active
+	background-color: $dark-blue
+	border-top: 2px solid $light-blue
+	color: white

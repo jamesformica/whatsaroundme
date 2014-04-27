@@ -1,0 +1,48 @@
+
+<div class="fib-step">
+	<div class="fib-heading">
+		<span>1. Select a location</span>
+	</div>	
+	<p>My Location, or</p>
+	<input type="text" placeholder=" ...enter a location"/>
+</div>
+
+
+<div class="fib-step">
+	<div class="fib-heading">
+		<span>2. Select a radius</span>
+	</div>
+	<p>Select the radius for Google to search around for (metres)</p>
+	<select ng-model="selectedRange" ng-options="range.display for range in radiusRanges">
+	</select>
+</div>
+
+
+<div class="fib-step">
+	<div class="fib-heading">
+		<span>3. Select your categories</span>
+	</div>
+	<p>Pick the categories of places you want to find around (max {{maxCategories}})</p><br/>
+	<div class="align-center"></div>
+	<button class="fib-button" ng-click="categoriesShown = true">Select categories!</button><br/><br/>
+	<p>Categories:</p>
+	<ul>
+		<li ng-repeat="category in categoriesArray" ng-show="category.selected">{{category.displayName}}</li>
+	</ul>		
+</div>
+
+
+<div class="continue" ng-click="continue(categoriesArray)" ng-hide="categoriesShown">Continue</div>
+
+
+<div class="categoriesListContainer" ng-class="{'categoriesListContainerHidden' : !categoriesShown}">
+	<div class="categoriesListOptions">
+		<span>:) {{maxCategories - numSelectedCategories}}</span>
+		<button ng-click="categoriesShown = false">Done</button>
+		<button ng-click="clearSelections()">Clear</button>		
+	</div>
+	
+	<div class="categoriesList">
+		<div ng-repeat="category in categoriesArray" ng-click="selectCategory(category)" ng-class="{'categoriesListItemSelected' : category.selected , 'categoriesListItemLast' : $last}">{{category.displayName}}</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+[
+    {
+        "value": 500,
+        "display": "500m",
+        "default": false
+    },
+    {
+    	"value": 1000,
+        "display": "1000m",
+        "default": false
+    },
+    {
+    	"value": 1500,
+        "display": "1500m",
+        "default": true
+    },
+    {
+    	"value": 2000,
+        "display": "2000m",
+        "default": false
+    },
+    {
+    	"value": 2500,
+        "display": "2500m",
+        "default": false
+    }
+]

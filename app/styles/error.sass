@@ -1,0 +1,45 @@
+div.errorContainer 
+	position: fixed
+	width: 70%
+	left: 15%
+	top: -50%
+	padding: 2%
+	border-radius: 6px
+	z-index: 100	
+	word-wrap: break-word	
+	background-color: $light-blue
+	border: 3px solid $medium-blue
+	+css-transition(0.5s)
+
+
+div.errorContainerShown 
+	left: 15%
+	top: 30%
+
+
+p#errorTitle 
+	font-size: 2.8em
+	font-weight: 400
+	line-height: 0.6em
+	margin-top: 10px
+	color: $dark-blue
+
+
+p#errorMessage 
+	padding: 10px
+	background-color: white
+	border-radius: 6px
+	font-size: 1.8em
+	font-weight: 400
+	color: #6E6E6E
+
+
+button.errorButton 
+	@extend .fib-button
+	width: 100%
+	
+
+
+button.errorButton:active 
+	@extend .fib-button:active
+

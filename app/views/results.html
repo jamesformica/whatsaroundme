@@ -1,0 +1,52 @@
+<div class="floatingMap" id="map-container">
+	<div class="mapInfo">
+		<span class="normal">{{mapPlace.name}}</span><span class="float-right">{{mapPlace.distance}}m</span><br/>
+		<span>{{mapPlace.vicinity}}</span><br/>
+	</div>
+	<div id="mapControls">			
+		<button ng-click="hideMap()" >&lt; Back to Results</button>
+		<button ng-click="resetMapBounds()" >Reset Zoom</button>			
+	</div>
+	<div id="map-canvas" map-size-directive></div>	
+</div>
+
+<div class="loadingVisible" ng-class="{'loadingHidden' : !showLoading }">
+	<img src="images/load_icon.gif" alt="logo"/><span>...searching</span>
+</div>
+
+<div class="resultWrapper">
+	<div ng-repeat="category in results" ng-show="category.selected">
+		
+		<div class="categoryHeader" ng-click="openCategoryResults($index)">
+			{{category.displayName}}
+			<div class="placeCouter">{{category.results ? category.results.length : "0" }}</div>
+		</div>
+
+		<div id="resultList{{$index}}" class="categoryResultsList" ng-class="{'categoryResultsListShown' : category.default}">
+			
+			<div class="categoryResult" ng-repeat="place in category.results" ng-click="showOnMap(place)">
+				
+				<span class="placeStatus" ng-show="place.opening_hours" ng-class="{'placeOpen' : place.opening_hours.open_now, 'placeClosed' : !place.opening_hours.open_now}">{{place.opening_hours.open_now ? "Open" : "Closed"}}</span>
+				
+				<span class="placeName">{{place.name}} </span><br/>				
+				<span>{{place.vicinity}}</span><br/>				
+				<div class="topBumper-5">
+					<span class="float-left">{{place.rating? place.rating + "/ 5.0" : ""}}</span>
+					<span class="float-right">{{place.distance}}m</span>
+				</div>			
+			
+			</div>
+		
+		</div>
+
+	</div>
+	<div class="poweredByGoogle">
+		<img src="images/google/powered-by-google-on-white.png" alt="powered by google"/>
+	</div>
+</div>
+
+
+
+
+<!--  -->
+

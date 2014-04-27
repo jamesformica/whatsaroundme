@@ -1,0 +1,65 @@
+$dark-blue: #66A7C5
+$medium-blue: #A3D6F5
+$light-blue: #CEEBFB
+
+$banner-red: #FA2542
+$default-text: #4d4d4d
+$separator: #ECE8ED
+$ok-background: #72CF80
+$warning-background: #E87D84
+$loading-image-size: 40px
+
+
+$bg-gray: #E2DDD9
+$outline-gray: #B0B0B0
+$separator-gray: #E3E3E3
+
+
+=user-select($select)
+	-webkit-user-select: $select 
+	-moz-user-select: $select
+	-ms-user-select: $select
+	user-select: $select
+
+=css-transition($seconds)
+	-webkit-transition: $seconds
+	transition: $seconds
+
+
+.normal
+	font-weight: 400 
+
+.padding-10
+	padding-left: 10px
+
+.topBumper-3
+	margin-top: 3%
+
+.topBumper-5
+	margin-top: 5%
+
+.rounded-2
+	border-radius: 2px
+
+.float-right
+	float: right
+
+.float-left
+	float: left
+
+.align-center
+	text-align: center
+
+.fib-button
+	font-size: 1.7em
+	line-height: 2em
+	font-weight: 400
+	background-color: $dark-blue
+	color: white
+	border-radius: 5px
+	border: 0
+	outline: hidden
+
+.fib-button:active
+	background-color: white
+	color: $dark-blue
